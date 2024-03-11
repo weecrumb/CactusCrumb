@@ -39,6 +39,7 @@
 					<ul class="header__nav-items">
 						<li class="header__nav-item"><a href="#" class="header__nav-link link">ГЛАВНАЯ</a></li>
 						<li class="header__nav-item"><a href="#" class="header__nav-link link">КАТАЛОГ</a></li>
+						<li class="header__nav-item"><a href="news.html" class="header__nav-link link">НОВОСТИ</a></li>
 						<li class="header__nav-item"><a href="#" class="header__nav-link link">О КОМПАНИИ</a></li>
 						<li class="header__nav-item"><a href="#" class="header__nav-link link">КОНТАКТЫ</a></li>
 					</ul>
@@ -124,8 +125,9 @@
 						<div class="interesting__item-desc">Эхинопсис прям из кактуса какого-то блин</div>
 						<div class="interesting__item-price">1 666 ₽</div>
 					</div>
-					<div class="interesting__item">
-						<div class="interesting__item-img" id="catalog3">
+					<!-- при 720 лишний элемент  -->
+					<div class="interesting__item" id="interesting__item-enough720">
+						<div class="interesting__item-img">
 							<button class="interesting__item-btn btn">НОВИНКА</button>
 							<button class="interesting__item-heart"><img src="img/heart-black.png" alt="heart"></button>
 						</div>
@@ -138,12 +140,14 @@
 							<button class="interesting__item-btn btn">НОВИНКА</button>
 							<button class="interesting__item-heart"><img src="img/heart-black.png" alt="heart"></button>
 						</div>
-						<div class="interesting__item-desc">Эхинопсис прям из кактуса какого-то блин</div>
+						<div class="interesting__item-desc" id="interesting__item-enough">Эхинопсис прям из кактуса какого-то
+							блин</div>
 						<div class="interesting__item-price">1 666 ₽</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<!-- * о компании -->
 		<section class="about">
 			<div class="about__container container">
@@ -202,7 +206,6 @@
 				<p class="footer-copy">© weecrumb 2024</p>
 				<p class="footer-desc"> Политика конфиденциальности</p>
 			</div>
-
 	</footer>
 	<!-- todo подгрузить svg иконки -->
 	<!-- todo менять svg цвет -->

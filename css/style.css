@@ -271,7 +271,7 @@ button {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	background: url(../img/interesting1.png);
+	background: url(../img/interesting1.png) no-repeat;
 	width: 354px;
 	height: 293px;
 }
@@ -456,11 +456,17 @@ button {
 
 	.firstscreen-title {
 		margin-top: 150px;
+		font-size: 30px;
 	}
 
 	/* firstscreen */
 
 	/* section catalog */
+
+	.catalog-title {
+		font-size: 30px;
+	}
+
 	.catalog__item-img {
 		width: 392px;
 		height: 386px;
@@ -470,13 +476,20 @@ button {
 
 	/* section interesting */
 
-	.interesting__item-img {
-		padding: 9px 10px;
-		display: flex;
-		align-items: flex-start;
+	.interesting-title {
+		font-size: 30px;
+	}
+
+	.interesting__items {
 		justify-content: space-between;
-		background: url(../img/interesting1.png) no-repeat;
-		background-size: cover;
+		gap: 9.87px;
+	}
+
+	.interesting__item {
+		width: 335px;
+	}
+
+	.interesting__item-img {
 		width: 379px;
 		height: 313.82px;
 	}
@@ -505,3 +518,95 @@ button {
 }
 
 /* *адаптив под экраны 1280px */
+
+
+/* *адаптив под экраны 720px */
+
+@media (max-width: 720px) {
+	.container {
+		max-width: 700px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	/* firstscreen */
+	.firstscreen-img {
+		margin-top: 48px;
+		width: 212.55px;
+		height: 274px;
+	}
+
+	.firstscreen-title {
+		margin-top: 94px;
+	}
+
+	/* firstscreen */
+
+	/* section catalog */
+	.catalog__item-img {
+		width: 200px;
+		height: 216px;
+	}
+
+	#catalog-1 {
+		background-position: center;
+		background-size: 203px 206px;
+	}
+
+	#catalog-2 {
+		background-position: center;
+		background-size: 203px 216px;
+	}
+
+	#catalog-3 {
+		background-position: center;
+		background-size: 203px 206px;
+	}
+
+	/* section catalog */
+
+	/* section interesting */
+
+	.interesting__item-img {
+		padding: 9px 10px;
+		display: flex;
+		align-items: flex-start;
+		background: url(../img/interesting1.png) no-repeat;
+		background-size: cover;
+		width: 335.13px;
+		height: 277.38px;
+	}
+
+	#interesting__item-enough720 {
+		display: none;
+	}
+
+	/* section interesting */
+
+	/* sec about */
+
+	.about-desc {
+		max-width: 657px;
+	}
+
+	.about__advantages {
+		justify-content: center;
+		gap: 5px;
+	}
+
+	.about__right-side {
+		display: none;
+	}
+
+	/* sec about */
+
+	/* !footer */
+
+	.footer-navigation__list {
+		flex-direction: column;
+	}
+
+	/* !footer */
+}
+
+/* *адаптив под экраны 720px */
