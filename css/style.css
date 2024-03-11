@@ -73,8 +73,7 @@ button {
 
 }
 
-
-/* header */
+/* !header */
 
 .header__menu {
 	display: flex;
@@ -146,14 +145,75 @@ button {
 	font-family: 'Montserrat';
 }
 
-/* header */
+/* burger */
 
-/* main */
+.open {
+	display: flex !important;
+}
+
+.burger {
+	display: none;
+	position: relative;
+	z-index: 50;
+	align-items: center;
+	justify-content: baseline;
+	width: 30px;
+	height: 18px;
+	margin-top: 5px;
+}
+
+.burger span {
+	height: 2px;
+	width: 80%;
+	transform: scale(1);
+	background-color: #000000;
+}
+
+.burger::before,
+.burger::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background-color: #000000;
+	transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+	top: 0;
+}
+
+.burger::after {
+	bottom: 0;
+}
+
+.burger.active span {
+	transform: scale(0);
+}
+
+.burger.active::before {
+	top: 50%;
+	transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+	bottom: 50%;
+	transform: rotate(45deg) translate(0, 50%);
+}
+
+/* todo добавляем класс active для анимации иконки бургера */
+
+/* burger */
+
+/* !header */
+
+/* !main */
 
 /* firstscreen */
 /* .firstscreen {
 	background: linear-gradient(90deg, #efefef);
 } */
+/* todo добавить градиент бэком на каждую страничку */
 
 .firstscreen__container {
 	display: flex;
@@ -383,9 +443,9 @@ button {
 
 /* sec about */
 
-/* main */
+/* !main */
 
-/* footer */
+/* !footer */
 
 .footer {
 	margin-top: 68px;
@@ -436,7 +496,7 @@ button {
 	color: #936E66;
 }
 
-/* footer */
+/* !footer */
 
 /* *адаптив под экраны 1280px */
 
@@ -523,6 +583,61 @@ button {
 /* *адаптив под экраны 720px */
 
 @media (max-width: 720px) {
+
+	/* burger */
+	@keyframes burgerAnimation {
+		from {
+			opacity: 0
+		}
+
+		to {
+			opacity: 1
+		}
+	}
+
+	/* keyframes */
+
+	.burger {
+		display: flex;
+		margin-left: 30px;
+	}
+
+	.nav {
+		display: none;
+		flex-direction: column;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 49;
+		overflow-y: auto;
+		padding: 200px 0px;
+		background-color: #EFEDE9;
+		animation: burgerAnimation 0.4s;
+		margin-left: 0;
+	}
+
+	.nav ul {
+
+		flex-direction: column;
+
+	}
+
+	.header__nav-items {
+		align-items: baseline;
+		margin-top: 50px;
+		margin-left: 100px;
+	}
+
+	.header__nav-link {
+		font-size: 20px;
+	}
+
+	/* burger */
+
 	.container {
 		max-width: 700px;
 		width: 100%;
