@@ -86,6 +86,10 @@ button {
 	align-items: center;
 }
 
+.header__menu-info-contact {
+	display: flex;
+}
+
 .header__menu-btn {
 	margin-left: 110px;
 }
@@ -467,6 +471,11 @@ button {
 	text-decoration: underline;
 }
 
+.footer-req {
+	display: flex;
+	gap: 76px;
+}
+
 .call-number-text {
 	font-size: 21px;
 }
@@ -584,6 +593,64 @@ button {
 
 @media (max-width: 720px) {
 
+	.container {
+		max-width: 700px;
+		width: 98%;
+		margin: 0 auto;
+
+	}
+
+	/* !header */
+
+	.header__menu {
+		padding: 12px 12px 20px 6.56px;
+	}
+
+	.header__logo-img {
+		width: 107px;
+		height: 97.44px;
+	}
+
+	.header__menu-info-contact {
+		display: flex;
+		align-items: baseline;
+		gap: 5px;
+		flex-direction: column;
+	}
+
+	.call,
+	.mail {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mail-post {
+		display: flex;
+		gap: 5px;
+	}
+
+	.btn {
+		font-size: 12px;
+		padding: 15px 34px;
+	}
+
+	.header__menu-btn {
+		display: block;
+		font-size: 14px;
+		margin-left: 36px;
+	}
+
+	.header__nav-right {
+		gap: 24px;
+	}
+
+	.firstscreen-desc {
+		width: 443px;
+		font-size: 14px;
+	}
+
+	/* !header */
+
 	/* burger */
 	@keyframes burgerAnimation {
 		from {
@@ -638,17 +705,24 @@ button {
 
 	/* burger */
 
-	.container {
-		max-width: 700px;
-		width: 100%;
-		margin: 0 auto;
+	/* firstscreen */
+
+	.firstscreen__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
-	/* firstscreen */
 	.firstscreen-img {
 		margin-top: 48px;
 		width: 212.55px;
 		height: 274px;
+		background-position: center;
+	}
+
+
+	.firstscreen-content {
+		margin-right: -50.45px;
 	}
 
 	.firstscreen-title {
@@ -658,6 +732,16 @@ button {
 	/* firstscreen */
 
 	/* section catalog */
+
+	.catalog-title {
+		margin-top: 46px;
+		margin-bottom: 48px;
+	}
+
+	.catalog__items {
+		gap: 10px;
+	}
+
 	.catalog__item-img {
 		width: 200px;
 		height: 216px;
@@ -681,6 +765,11 @@ button {
 	/* section catalog */
 
 	/* section interesting */
+
+	.interesting-title {
+		margin-top: 38px;
+		margin-bottom: 47px;
+	}
 
 	.interesting__item-img {
 		padding: 9px 10px;
@@ -717,8 +806,28 @@ button {
 
 	/* !footer */
 
+	.footer__logo {
+		width: 169px;
+	}
+
 	.footer-navigation__list {
 		flex-direction: column;
+	}
+
+	.footer-navigation__link {
+		font-size: 14px;
+	}
+
+	.footer-req {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+	}
+
+	.footer-copy,
+	.footer-desc {
+		font-size: 14px;
 	}
 
 	/* !footer */
