@@ -8,6 +8,11 @@
 	src: url(../fonts/FRACTAL.ttf);
 }
 
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url(../fonts/Montserrat-Light.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
